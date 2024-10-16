@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-serenity = { version = "0.11", features = ["client", "framework"] }
+serenity = { version = "0.11", default-features = false, features = ["client", "model", "http", "gateway", "rustls_backend"] }
 tokio = { version = "1", features = ["full"] }
 chrono = "0.4"
+
